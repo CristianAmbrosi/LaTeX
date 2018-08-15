@@ -37,3 +37,15 @@ Pode se optar por [baixar todo o projeto](/Apostila) ou apenas o [pdf já compil
 
 Para ter acesso há alguns templates em LaTeX incluindo o template não oficial de TCC da URI acesse esse link: [templates](/Templates/principais-templates.md)
 
+## Links Úteis / Informações
+
+- http://detexify.kirelabs.org/classify.html
+
+- http://www.more.ufsc.br/
+
+- Para utilizar o arquivo Makefile para compilar o arquivo **.tex** para PDF, é preciso ter instalado no Linux a ferramenta **Make**.
+
+    - sudo apt install make
+
+    - make nome_arquivo.tex
+

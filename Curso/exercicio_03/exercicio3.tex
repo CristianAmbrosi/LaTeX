@@ -1,0 +1,52 @@
+\documentclass[12,brazil]{abntex2}
+
+    % \usepackage[english,brazilian]{babel} % determina a língua usada no texto
+    \usepackage[utf8]{inputenc} % determina a codificação usada (UTF8 Universal)
+    \usepackage[T1]{fontenc} % determina a codificação dos fontes usados na saída
+    \usepackage{lmodern} % melhora a qualidade dos fontes no PDF
+    \usepackage{graphicx} % permite incorporar imagens no texto
+    \usepackage{amsmath,amssymb} % fontes e símbolos matemáticos adicionais
+    \usepackage{indentfirst} % indentação em início do primeiro parágrafo
+    \usepackage{url} % permite colocar urls no texto
+    \usepackage{lipsum}  
+    \usepackage{geometry}
+    \usepackage{float}
+    \usepackage[algoruled, portuguese]{algorithm2e} 
+
+    \hypersetup{
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      	% color of file links
+	urlcolor=blue,
+    bookmarksdepth=4
+    }
+
+    \geometry{
+        a4paper,
+        left=3cm,
+        top=3cm,
+        right=2cm,
+        bottom=2cm
+    }
+
+    \title{Como Funciona o GPS}
+    \author{Cristian JA}
+    \date{2018}
+    
+    \begin{document}
+
+    \include{introducao}
+    
+        
+    \bibliography{ref}
+    \bibliographystyle{abntex2-alf}
+
+    \end{document}
+    

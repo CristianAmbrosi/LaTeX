@@ -1,0 +1,115 @@
+% Arquivo para resolução do exercício ...(colocar número do exercício)
+
+\chapter{INTRODUÇÃO}
+\begin{large}
+O sistema de posicionamento global
+\end{large}
+\foreignlanguage{english}{(positioning system)} %aumente a fonte para 14pts 
+, mais conhecido pela sigla GPS (em inglês global positioning system) %Colocar trecho em inglês [positioning system]
+é um sistema de posicionamento por satélite que fornece a um aparelho receptor móvel a sua posição, assim como informação horária,
+sob quaisquer condições atmosféricas, a qualquer momento e em qualquer lugar na Terra, desde que
+o receptor se encontre no campo de visão de três satélites GPS
+
+Todos os satélites são controlados pelas estações terrestres de
+gerenciamento. Existe uma que é a \textit{master} %Colocar [master] em itálico
+, localizada no Colorado (Estados Unidos), que, com o auxílio de cinco estações de gerenciamento
+espalhadas pelo planeta, monitoram o desempenho total do sistema, corrigindo
+as posições dos satélites e reprogramando o sistema com o padrão
+necessário. Após o processamento de todos esses dados, as correções e
+sinais de controle são transferidos de volta para os satélites.
+
+Cada um dos satélites do \textbf{GPS} %Colocar [GPS] em negrito
+transmite por rádio um padrão fixado,
+que é recebido por um receptor na Terra (segmento do usuário), funcionando
+como um cronômetro extremamente acurado. O receptor mede a diferença
+entre o tempo que o padrão é recebido e o tempo que foi emitido. Essa
+diferença, não mais do que um décimo de segundo, permite que o receptor
+calcule a distância ao satélite emissor multiplicando-se a 
+velocidade\footnote{aproximadamente 2,99792458.108 m/s – a velocidade da luz} do sinal %colocar nota de rodapé em [velocidade] texto = ( aproximadamente 2,99792458.108 m/s – a velocidade da luz )
+pelo tempo que o sinal de rádio levou do satélite ao receptor.
+
+\begin{figure}[!htb]
+    \centering
+    \caption{Exemplo de Figura}
+    \includegraphics[width=0.3\textwidth]{ltx_paper}
+    \fonte{\cite{IRL2014}}
+    \label{fig:figura-exemplo1}
+\end{figure}
+
+% Colocar esse parágrafo na outra página
+\newpage Em \cite{Barbosa2004} 24 de março 2009 foi lançado o primeiro satélite GPS equipado com uma amostra de hardware funcionando em frequência l5.
+\cite{Barbosa2004} Entre outras novidades, este satélite será o primeiro a emitir o sinal GPS numa frequência de 1176.45 MHz (1.2 GHz).
+
+Em Geral isso é uma vantagem pois:
+% Colocar frases abaixo em itens não numerados
+\begin{itemize}
+    \item Melhora a estrutura do sinal para melhor desempenho.
+    \item Transmissão superior ao do L1 e L2 sinal.
+\end{itemize}
+% Centralize este parágrafo
+\begin{center}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+\end{center}
+
+\begin{flushleft}
+% Alinhe à esquerda
+Lorem ipsum dolor sit amet, consectetur adipiscing $E=mc^2$ elit.
+\end{flushleft}
+
+\begin{flushright}
+% Alinhe à direita
+Lorem ipsum dolor sit amet, consectetur adipiscing elit \(E=mc^2\).
+\end{flushright}
+
+\begin{table}[!htb]
+    \centering
+    \caption[Resultado dos testes]{Resultado dos testes.
+    \label{tab:tabela-exemplo1}}
+    \begin{tabular}{rrrrr}
+        \toprule
+            & Valores 1 & Valores 2 & Valores 3 & Valores 4 \\
+        \midrule
+            Caso 1 & 0,86 & 0,77 & 0,81 & 163 \\
+            Caso 2 & 0,19 & 0,74 & 0,25 & 180 \\
+            Caso 3 & 1,00 & 1,00 & 1,00 & 170 \\
+        \bottomrule
+    \end{tabular}
+    \fonte{\cite{Barbosa2004}}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \caption[Faixa Estária de Estudantes do Curso.]{Faixa Estária de Estudantes do Curso.
+    \label{tab:tabela-exemplo1}}
+    \begin{tabular}{cc}
+        \toprule
+            Faixa Etária & Frequência Absoluta \\
+        \midrule
+            19 $\vdash$ 21 & 6 \\
+            21 $\vdash$ 23 & 14 \\
+            23 $\vdash$ 25 & 1 \\
+            25 $\vdash$ 27 & 25 \\
+        \bottomrule
+    \end{tabular}
+    \fonte{EU}
+\end{table}
+
+    \begin{math}
+        E=mc^2
+    \end{math}
+
+    \begin{algorithm}[H]
+    \Entrada{o proprio texto}
+    \Saida{como escrever algoritmos com \LaTeX2e }
+    \Inicio{
+        inicializa\c{c}\~ao\;
+        \Repita{fim do texto}{
+            leia o atual\;
+            \Se{entendeu}{
+                vá para o próximo\;
+                próximo se torna o atual\;}
+            \Senao{volte ao início da seção\;}
+        }
+    }
+    \caption{Como escrever algoritmos no \LaTeX2e}
+    \end{algorithm}
